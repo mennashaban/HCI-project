@@ -10,8 +10,7 @@ from sklearn.naive_bayes import GaussianNB
 
 
 def butter_bandpass_filter(signal, low, high, rate, order):
-    # bandpass filter using a Butterworth filter to remove noise outside a specific frequency range (0.5 Hz to 20 Hz)
-    # rate :  sampling rate
+
     nyq = 0.5 * rate  # calculates the Nyquist frequency (nyq) as half of the sampling rate.
     l = low / nyq  # lower cutoff frequency (normalize)
     h = high / nyq  # high cutoff frequency(normalize)
